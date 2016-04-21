@@ -53,7 +53,10 @@ if ! [ -d ~/.oh-my-zsh ]; then
   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
-git clone https://github.com/mgilbir/dotfiles ~/Projects/dotfiles
-(cd ~/Projects/dotfiles && make)
+if ! [ -d ~/Projects/dotfiles ]; then
+  git clone https://github.com/mgilbir/dotfiles ~/Projects/dotfiles
+fi
+
+(cd ~/Projects/dotfiles && git pull --rebase && make)
 
 
