@@ -46,6 +46,7 @@ brew install the_silver_searcher
 brew install vim
 brew install wget
 brew install youtube-dl
+brew install ccat
 brew install Caskroom/versions/google-chrome-dev
 brew install Caskroom/cask/atom
 brew install Caskroom/cask/dropbox
