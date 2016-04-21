@@ -57,6 +57,7 @@ brew install Caskroom/cask/alfred
 brew install Caskroom/cask/intellij-idea
 brew install Caskroom/cask/sourcetree
 brew install Caskroom/cask/little-snitch
+brew install Caskroom/cask/viscosity
 
 if ! [ -d ~/.oh-my-zsh ]; then
   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
