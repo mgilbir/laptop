@@ -48,6 +48,7 @@ brew install wget
 brew install youtube-dl
 brew install Caskroom/versions/google-chrome-dev
 brew install Caskroom/cask/atom
+brew install Caskroom/cask/dropbox
 
 if ! [ -d ~/.oh-my-zsh ]; then
   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
