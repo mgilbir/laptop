@@ -60,4 +60,7 @@ fi
 
 (cd ~/Projects/dotfiles && git pull --rebase && make)
 
+# Disable itunes launch with media keys
+launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
+
 
