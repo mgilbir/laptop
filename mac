@@ -1,0 +1,58 @@
+#! /bin/bash
+
+mkdir -p ~/Projects
+
+if ! command -v brew >/dev/null; then
+  echo "Installing Homebrew ..."
+    curl -fsS \
+      'https://raw.githubusercontent.com/Homebrew/install/master/install' | ruby
+fi
+
+brew install ammonite-repl
+brew install apktool
+brew install autojump
+brew install awscli
+brew install bazaar
+brew install boot2docker
+brew install caskroom/cask/brew-cask
+brew install caddy
+brew install ctags
+brew install ffmpeg
+brew install gdal
+brew install gifsicle
+brew install glide
+brew install gnupg
+brew install gnuplot
+brew install gpac
+brew install h2o
+brew install htop
+brew install imagemagick
+brew install jq
+brew install keybase
+brew install libvo-aacenc
+brew install mercurial
+brew install mplayer
+brew install neovim/neovim/neovim
+brew install node
+brew install protobuf
+brew install python3
+brew install redis
+brew install rename
+brew install sbt
+brew install scala
+brew install homebrew/fuse/sshfs
+brew install sysdig
+brew install terraform
+brew install the_silver_searcher
+brew install vim
+brew install wget
+brew install youtube-dl
+brew install Caskroom/versions/google-chrome-dev
+
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+git clone https://github.com/mgilbir/dotfiles ~/Projects/dotfiles
+
+cd ~/Projects/dotfiles && make
+
+
