@@ -64,3 +64,14 @@ fi
 
 # Disable itunes launch with media keys
 launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
+
+# Install golang
+GOVERSION=1.6.2
+curl -fsSL https://storage.googleapis.com/golang/go$GOVERSION.darwin-amd64.pkg -O ~/Downloads/
+sudo mv /usr/local/go /usr/local/go_old
+sudo installer -pkg ~/Downloads/go$GOVERSION.darwin-amd64.tar.gz -target /usr/local/go
+if [ $? -eq 0 ]; then
+    echo "Successfully installed go $GOVERSION. Removing old"
+    sudo rm -rf /usr/local/go_old
+else
+
