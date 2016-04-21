@@ -52,6 +52,7 @@ brew install Caskroom/cask/dropbox
 brew install Caskroom/cask/1password
 brew install Caskroom/cask/vlc
 brew install Caskroom/cask/sketch
+brew install Caskroom/cask/iterm2
 
 if ! [ -d ~/.oh-my-zsh ]; then
   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
