@@ -71,7 +71,7 @@ launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
 
 # Install golang
 GOVERSION=1.6.2
-if ! [ -e ~/Downloads/go$GOVERSION.darwin-amd64.pkg]; then
+if ! [ -e ~/Downloads/go$GOVERSION.darwin-amd64.pkg ]; then
   echo "Downloading go $GOVERSION"
   (cd ~/Downloads && curl -O https://storage.googleapis.com/golang/go$GOVERSION.darwin-amd64.pkg)
   #TODO: Do it without shelling out to the GUI
