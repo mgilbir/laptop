@@ -73,6 +73,9 @@ fi
 # Disable itunes launch with media keys
 launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
 
+# Disable t.co links in Tweetbot
+defaults write com.tapbots.TweetbotMac OpenURLsDirectly -bool true
+
 # Install golang
 GOVERSION=1.6.2
 if ! [ -e ~/Downloads/go$GOVERSION.darwin-amd64.pkg ]; then
